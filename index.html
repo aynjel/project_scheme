@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Project Scheme" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css"
+        integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light rounded">
+            <div class="container-fluid"><img src="nav-img.png" alt="logo" class="navbar-brand" style="width: 8%;">
+                <a href="#" style="text-decoration: none; font-weight: 500; color: rgb(36, 36, 36); font-size: 20px;">Enrollment System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Learn More</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container">
+        <nav class="text-center mx-auto">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active text-dark" id="nav-login" data-bs-toggle="tab"
+                    data-bs-target="#nav-login-tab" type="button" role="tab" aria-controls="nav-login-tab"
+                    aria-selected="true">Sign In</button>
+                <button class="nav-link text-dark" id="nav-signin" data-bs-toggle="tab" data-bs-target="#nav-signin-tab"
+                    type="button" role="tab" aria-controls="nav-signin-tab" aria-selected="false">Sign Up</button>
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">.
+            <!-- SIGN IN TAB -->
+            <div class="tab-pane fade show active" id="nav-login-tab" role="tabpanel" aria-labelledby="nav-login">
+                <form class="row g-3 mx-auto mt-2" style="max-width: 300px;">
+                    <h1 class="text-center" style="font-size: 30px;">Sign In</h1>
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person-badge" style="font-size: 1.4rem;"></i></span>
+                            <input type="text" class="form-control" id="username"
+                                aria-describedby="inputGroupPrepend" placeholder="Username" required autocomplete="off">
+                        </div>
+                        <div class="input-group mt-2">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-key-fill" style="font-size: 1.4rem;"></i></span>
+                            <input type="password" class="form-control" id="password"
+                                aria-describedby="inputGroupPrepend" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-control mt-2">LOG IN</button>
+                    </div>
+                </form>
+            </div>
+            <!-- SIGN UP TAB -->
+            <div class="tab-pane fade" id="nav-signin-tab" role="tabpanel" aria-labelledby="nav-signin">
+                <form class="row g-3 mx-auto mt-2" style="max-width: 500px;">
+                    <h1 class="text-center" style="font-size: 30px;">Sign Up</h1>
+                    <div class="col-md-12">
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person-circle" style="font-size: 1.2rem;"></i></span>
+                            <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" placeholder="Firstname" required>
+                            <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" placeholder="Middlename" required>
+                            <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" placeholder="Lastname" required>
+                        </div>
+                        <div class="input-group mt-1">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-envelope-fill" style="font-size: 1.2rem;"></i></span>
+                            <input type="email" class="form-control" id="username" aria-describedby="inputGroupPrepend" placeholder="Email" required>
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-geo-alt-fill" style="font-size: 1.2rem;"></i></span>
+                            <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" placeholder="Address" required>
+                        </div>
+                        <div class="input-group mt-1">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person-badge-fill" style="font-size: 1.2rem;"></i></span>
+                            <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                        </div>
+                        <div class="input-group mt-1">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-key" style="font-size: 1.2rem;"></i></span>
+                            <input type="password" class="form-control" id="username" aria-describedby="inputGroupPrepend" placeholder="Password" required>
+                            <input type="password" class="form-control" id="username" aria-describedby="inputGroupPrepend" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary form-control" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"
+        integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

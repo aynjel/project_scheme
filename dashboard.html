@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Project Scheme" />
+    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css"
+        integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light rounded">
+            <div class="container-fluid"><img src="nav-img.png" alt="logo" class="navbar-brand" style="width: 8%;">
+                <a href="#"
+                    style="text-decoration: none; font-weight: 500; color: rgb(36, 36, 36); font-size: 20px;">Enrollment
+                    System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container">
+        <nav class="text-center mx-auto">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active text-dark" id="nav-apply" data-bs-toggle="tab"
+                    data-bs-target="#nav-apply-tab" type="button" role="tab" aria-controls="nav-apply-tab"
+                    aria-selected="true">Apply</button>
+                <button class="nav-link text-dark" id="nav-manage" data-bs-toggle="tab" data-bs-target="#nav-manage-tab"
+                    type="button" role="tab" aria-controls="nav-manage-tab" aria-selected="false">Details</button>
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">.
+            <!-- APPLY TAB -->
+
+            <div class="tab-pane fade show active" id="nav-apply-tab" role="tabpanel" aria-labelledby="nav-apply"
+                style="max-width: 600px; margin: 0 auto;">
+                <h1 class="text-left" style="font-size: 30px;">Admission Form</h1>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark active" id="new-student-tab" data-bs-toggle="tab"
+                            data-bs-target="#new-student" type="button" role="tab" aria-controls="new-student"
+                            aria-selected="true">New Student</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-dark" id="old-student-tab" data-bs-toggle="tab"
+                            data-bs-target="#old-student" type="button" role="tab" aria-controls="old-student"
+                            aria-selected="false">Old
+                            Student</button>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- OLD STUDENT TAB -->
+                    <div class="tab-pane active" id="new-student" role="tabpanel" aria-labelledby="home-tab">
+                        <form class="row g-3 mx-auto mt-1">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="inputGroupPrepend"><i
+                                            class="bi bi-person-lines-fill"></i></span>
+                                    <input type="text" class="form-control" id="new_student" value="New Student"
+                                        disabled aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Admission No.</span>
+                                    <input type="number" class="form-control" id="admision_number"
+                                        aria-describedby="inputGroupPrepend" disabled>
+                                    <span class="input-group-text" id="inputGroupPrepend">Date</span>
+                                    <input type="date" class="form-control" id="username"
+                                        aria-describedby="inputGroupPrepend" disabled>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Academic Year</span>
+                                    <input type="number" class="form-control" id="academic_year"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <h1 class="text-left mt-3" style="font-size: 20px;">STUDENT PROFILE</h1>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="inputGroupPrepend">Name of Pupil</span>
+                                    <input type="text" class="form-control" id="firstname" placeholder="Firstname"
+                                        aria-describedby="inputGroupPrepend">
+                                    <input type="text" class="form-control" id="middlename" placeholder="Middlename"
+                                        aria-describedby="inputGroupPrepend">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Lastname"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Date of Birth</span>
+                                    <input type="date" class="form-control" id="date_birth"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Place of Birth</span>
+                                    <input type="text" class="form-control" id="place_birth"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Address</span>
+                                    <input type="number" class="form-control" id="address"
+                                        aria-describedby="inputGroupPrepend" placeholder="Zip Code">
+                                    <input type="text" class="form-control" id="address"
+                                        aria-describedby="inputGroupPrepend" placeholder="Baranggay">
+                                    <input type="text" class="form-control" id="address"
+                                        aria-describedby="inputGroupPrepend" placeholder="Municipality">
+                                    <input type="text" class="form-control" id="address"
+                                        aria-describedby="inputGroupPrepend" placeholder="Province">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Nationality</span>
+                                    <input type="text" class="form-control" id="nationality"
+                                        aria-describedby="inputGroupPrepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">Gender</span>
+                                    <select class="form-select" aria-label="Select Gender">
+                                        <option>Choose</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-control mt-2">LOG IN</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- OLD STUDENT TAB -->
+                    <div class="tab-pane" id="old-student" role="tabpanel" aria-labelledby="profile-tab">
+                        <form class="row g-3 mx-auto mt-1">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="inputGroupPrepend"><i
+                                            class="bi bi-person-lines-fill"></i></span>
+                                    <input type="text" class="form-control" id="old_student" value="Old Student"
+                                        disabled aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Admission No.</span>
+                                    <input type="number" class="form-control" id="admision_number"
+                                        aria-describedby="inputGroupPrepend" disabled>
+                                    <span class="input-group-text" id="inputGroupPrepend">Date</span>
+                                    <input type="date" class="form-control" id="username"
+                                        aria-describedby="inputGroupPrepend" disabled>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Student ID</span>
+                                    <input type="number" class="form-control" id="id_number"
+                                        aria-describedby="inputGroupPrepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">Academic Year</span>
+                                    <input type="number" class="form-control" id="academic_year"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <h1 class="text-left mt-3" style="font-size: 20px;">STUDENT PROFILE</h1>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="inputGroupPrepend">Name of Pupil</span>
+                                    <input type="text" class="form-control" id="firstname" placeholder="Firstname"
+                                        aria-describedby="inputGroupPrepend">
+                                    <input type="text" class="form-control" id="middlename" placeholder="Middlename"
+                                        aria-describedby="inputGroupPrepend">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Lastname"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Date of Birth</span>
+                                    <input type="date" class="form-control" id="date_birth"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Place of Birth</span>
+                                    <input type="text" class="form-control" id="place_birth"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Address</span>
+                                    <input type="number" class="form-control" id="address"
+                                        aria-describedby="inputGroupPrepend" placeholder="Zip Code">
+                                    <input type="text" class="form-control" id="address"
+                                        aria-describedby="inputGroupPrepend" placeholder="Baranggay">
+                                    <input type="text" class="form-control" id="address"
+                                        aria-describedby="inputGroupPrepend" placeholder="Municipality">
+                                    <input type="text" class="form-control" id="address"
+                                        aria-describedby="inputGroupPrepend" placeholder="Province">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Nationality</span>
+                                    <input type="text" class="form-control" id="nationality"
+                                        aria-describedby="inputGroupPrepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">Gender</span>
+                                    <select class="form-select" aria-label="Select Gender">
+                                        <option>Choose</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-control mt-2">LOG IN</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- MANAGE TAB -->
+            <div class="tab-pane fade" id="nav-manage-tab" role="tabpanel" aria-labelledby="nav-manage">
+                <form class="row g-3 mx-auto" style="max-width: 800px;">
+                    <h1 class="text-center" style="font-size: 30px;">Details</h1>
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr class="text-center">
+                                <th scope="col">Name</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Course</th>
+                                <th scope="col">Academic Year</th>
+                                <th scope="col">Billing</th>
+                                <th scope="col">Regulation</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
