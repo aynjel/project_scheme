@@ -56,10 +56,10 @@
             </div>
         </nav>
 
-        <div class="tab-content" id="nav-tabContent">.
+        <div class="tab-content" id="nav-tabContent">
             <!-- APPLY TAB -->
 
-            <div class="tab-pane fade show active" id="nav-apply-tab" role="tabpanel" aria-labelledby="nav-apply"
+            <div class="tab-pane fade show active mt-3" id="nav-apply-tab" role="tabpanel" aria-labelledby="nav-apply"
                 style="max-width: 600px; margin: 0 auto;">
                 <h1 class="text-left" style="font-size: 30px;">Admission Form</h1>
 
@@ -128,6 +128,58 @@
                                     <span class="input-group-text" id="inputGroupPrepend">Grade/Year</span>
                                     <input type="number" class="form-control" id="year"
                                         aria-describedby="inputGroupPrepend" required>
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Strand</span>
+                                    <select class="form-select" aria-label="Select Strand" required>
+                                        <option>Choose (Applicable only to Senior High)</option>
+                                        <option>HUMMS</option>
+                                        <option>STEM</option>
+                                        <option>ABM</option>
+                                        <option>TVL</option>
+                                        <option>Entrepreneur</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Course</span>
+                                    <select class="form-select" aria-label="Select Strand" required>
+                                        <option>Choose (Applicable only to College)</option>
+                                        <option>Bachelor of Science in Information</option>
+                                        <option>Bachelor of Elementary Education</option>
+                                        <option>Bachelor of Secondary Education</option>
+                                        <option>Bachelor of Science in Hotel and Restaurant Management</option>
+                                        <option>Bachelor of Scince in Information Technology</option>
+                                    </select>
+                                </div>
+                                <h1 class="text-left mt-3" style="font-size: 20px;">Scanned File</h1>
+
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Report Card</span>
+                                    <input type="file" class="form-control" id="report_card"
+                                        aria-describedby="inputGroupPrepend" value="1">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Good Moral</span>
+                                    <input type="file" class="form-control" id="good_moral"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">PSA</span>
+                                    <input type="file" class="form-control" id="psa"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">Admission Test Result</span>
+                                    <input type="file" class="form-control" id="admision"
+                                        aria-describedby="inputGroupPrepend">
+                                </div>
+
+                                <h1 class="text-left mt-3" style="font-size: 20px;">Picture</h1>
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text" id="inputGroupPrepend">2x2</span>
+                                    <input type="file" class="form-control" id="2_2"
+                                        aria-describedby="inputGroupPrepend">
                                 </div>
 
                                 <h1 class="text-left mt-3" style="font-size: 20px;">PROFILE DETAILS</h1>
@@ -250,9 +302,9 @@
                                 </div>
                                 <div class="input-group mt-1">
                                     <button type="button" class="btn btn-danger form-control mt-2">CLEAR</button>
-                                    <button type="submit" class="btn btn-primary form-control mt-2">LOG IN</button>
+                                    <button type="submit" class="btn btn-primary form-control mt-2">SUBMIT</button>
                                 </div>
-
+                                <hr>
                             </div>
                         </form>
                     </div>
